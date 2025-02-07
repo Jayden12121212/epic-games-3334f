@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+/* Font Family */
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "InterTight";
+  src: url("/fonts/InterTight-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "InterTight";
+  src: url("/fonts/InterTight-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Theme Variables */
+
+@theme {
+  /* Backgrounds */
+  --color-bg-default: #0e1128;
+  --color-bg-elevated-low: #121630;
+  --color-bg-elevated-mid: #202024;
+  --color-bg-elevated-high: #303034;
+  --color-bg-hover: #404044;
+  --color-bg-press: #28282c;
+  --color-bg-overlay-strong: rgba(0, 0, 0, 0.65);
+  --color-bg-overlay-regular: rgba(0, 0, 0, 0.35);
+  --color-bg-disabled: hsla(0, 0%, 100%, 0.05);
+
+  /* Borders */
+  --border-focus: #ffffff;
+  --border-disabled: hsla(0, 0%, 100%, 0.35);
+  --border-subtle: hsla(0, 0%, 100%, 0.15);
+  --border-strong: hsla(0, 0%, 100%, 0.65);
+  --border-accent: #26bbff;
+  --border-critical: #ff3f56;
+
+  /* Text Colors */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: hsla(0, 0%, 100%, 0.65);
+  --color-text-disabled: hsla(0, 0%, 100%, 0.35);
+  --color-text-accent: #26bbff;
+  --color-text-critical: #ff6173;
+
+  /* Buttons */
+  --color-btn-primary: #26bbff;
+  --color-btn-primary-hover: #72d3ff;
+  --color-btn-primary-press: #26bbff;
+  --color-btn-secondary: hsla(0, 0%, 100%, 0.15);
+  --color-btn-secondary-hover: hsla(0, 0%, 100%, 0.35);
+  --color-btn-secondary-press: hsla(0, 0%, 100%, 0.15);
+  --color-btn-disabled: #303034;
+
+  /* Font Families */
+  --font-sans: "Inter", sans-serif;
+  --font-tighter: "InterTight", sans-serif;
+}
+
+/* Default Body */
+
+body {
+  @apply bg-bg-default text-text-primary font-sans text-sm leading-5 antialiased;
+}
